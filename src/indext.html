@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="output.css" />
+    <title>Hockey</title>
+  </head>
+  <body>
+    <div class="xl:max-w-7xl xl:px-0 px-5 mx-auto">
+      <!-- header section start -->
+      <header class="flex justify-between items-center my-5">
+        <div class="text-3xl font-bold">
+          <h1>Hockey<span class="text-red-500 text-3xl">’</span>s</h1>
+        </div>
+        <div class="md:block hidden">
+          <nav class="flex list-none gap-4 text-xl cursor-pointer">
+            <li class="text-red-500"><a href="#"></a>Home</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Pages</li>
+            <li><a href="#"></a>Blog</li>
+            <li><a href="#"></a>Contact</li>
+          </nav>
+        </div>
+        <div class="flex items-center gap-6">
+          <i class="text-xl opacity-70 fa-solid fa-magnifying-glass"></i>
+          <button
+            class="py-3 px-4 text-1xl font-bold rounded-lg text-white bg-red-500 hover:bg-red-600 duration-100 delay-200"
+          >
+            Get Ticket
+          </button>
+
+          <div class="md:hidden block text-xl">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <!-- header section end -->
+      <!-- banner section start -->
+      <section>
+        <div class="carousel w-full relative rounded-lg">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="../src/image/banner.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="bg-black p-5 max-w-md text-white bottom-8 right-5 rounded-lg absolute"
+            >
+              <h1 class="text-2xl">Meet all the heroes from the field</h1>
+              <p class="pt-3 text-xs opacity-85">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="../src/image/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="bg-black p-5 max-w-md text-white bottom-8 right-5 rounded-lg absolute"
+            >
+              <h1 class="text-2xl">Meet all the heroes from the field</h1>
+              <p class="pt-3 text-xs opacity-85">
+                Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                turpis placerat dolor. Purus urna in sit nullam proin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner section end -->
+      <!-- Professional Hockey Club start -->
+      <section class="my-20">
+        <div class="text-center">
+          <h1 class="text-3xl font-semibold">Professional Hockeys Club</h1>
+          <p class="mt-3 text-base opacity-70">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor.<span class="block">
+              Purus urna in sit nullam proin.</span
+            >
+          </p>
+        </div>
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10 mt-20"
+        >
+          <div class="flex flex-col items-center text-center">
+            <div class="relative">
+              <svg
+                class="relative"
+                xmlns="http://www.w3.org/2000/svg"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                fill="none"
+              >
+                <path
+                  d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                  fill="#E7E7E8"
+                />
+                <path
+                  d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                  fill="#FF4240"
+                />
+              </svg>
+              <div>
+                <h1 class="absolute top-11 left-9 text-2xl font-extrabold">
+                  87%
+                </h1>
+              </div>
+            </div>
+            <div class="ml-2">
+              <h1 class="my-3 text-1xl font-semibold">Prayer Facility</h1>
+              <p class="text-base opacity-70">
+                Amet consectetur. Condimentum<span class="block"
+                  >dignissim adipiscing</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="relative">
+              <svg
+                class="relative"
+                xmlns="http://www.w3.org/2000/svg"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                fill="none"
+              >
+                <path
+                  d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                  fill="#E7E7E8"
+                />
+                <path
+                  d="M114.266 60C117.433 60 120.028 57.4266 119.726 54.274C118.506 41.5436 113.241 29.4793 104.626 19.8933C94.7273 8.87961 81.1057 1.91535 66.3817 0.340346C51.6576 -1.23466 36.8712 2.69086 24.8672 11.3617C12.8632 20.0325 4.48966 32.836 1.35752 47.3091C-1.77461 61.7821 0.55594 76.9021 7.90081 89.7603C15.2457 102.618 27.086 112.306 41.1438 116.96C55.2016 121.614 70.4837 120.905 84.0501 114.969C95.858 109.803 105.64 100.995 112.015 89.9081C113.593 87.1625 112.294 83.7461 109.41 82.4366C106.526 81.1272 103.155 82.426 101.515 85.1352C96.3546 93.6587 88.6662 100.431 79.4529 104.462C68.4798 109.263 56.1188 109.836 44.7481 106.072C33.3775 102.308 23.8005 94.4719 17.8596 84.0716C11.9187 73.6713 10.0336 61.4414 12.567 49.7349C15.1005 38.0284 21.8734 27.6723 31.5828 20.6589C41.2923 13.6455 53.2523 10.4704 65.1618 11.7443C77.0714 13.0182 88.0892 18.6513 96.0955 27.5597C102.818 35.0393 107.018 44.3841 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                  fill="#49D293"
+                />
+              </svg>
+              <div>
+                <h1 class="absolute top-11 left-9 text-2xl font-extrabold">
+                  95%
+                </h1>
+              </div>
+            </div>
+            <div class="ml-2">
+              <h1 class="my-3 text-1xl font-semibold">Experienced Coach</h1>
+              <p class="text-base opacity-70">
+                Amet consectetur. Condimentum
+                <span class="block">dignissim adipiscing</span>
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="relative">
+              <svg
+                class="relative"
+                xmlns="http://www.w3.org/2000/svg"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                fill="none"
+              >
+                <path
+                  d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                  fill="#E7E7E8"
+                />
+                <path
+                  d="M110.134 80.7677C113.06 81.9797 116.443 80.5956 117.371 77.5673C120.973 65.8033 120.885 53.165 117.038 41.3814C112.596 27.7733 103.435 16.2017 91.2094 8.75578C78.9837 1.30986 64.4986 -1.51971 50.3695 0.777937C36.2403 3.07558 23.3982 10.349 14.1616 21.2851C4.92507 32.2212 -0.0972474 46.0992 0.00142546 60.4136C0.100098 74.728 5.31326 88.5355 14.6997 99.3431C24.0862 110.151 37.0273 117.247 51.1868 119.349C63.4479 121.17 75.9229 119.143 86.9184 113.623C89.7488 112.202 90.5474 108.635 88.8628 105.953C87.1783 103.271 83.6496 102.497 80.7878 103.854C72.1379 107.954 62.4244 109.423 52.8714 108.005C41.4186 106.304 30.9511 100.565 23.3589 91.8227C15.7666 83.0809 11.55 71.9127 11.4702 60.3345C11.3903 48.7563 15.4526 37.5311 22.9236 28.6854C30.3946 19.8398 40.782 13.9567 52.2103 12.0982C63.6387 10.2398 75.3549 12.5285 85.2438 18.5511C95.1326 24.5737 102.542 33.9334 106.135 44.9403C109.132 54.1213 109.309 63.9437 106.713 73.1577C105.855 76.2061 107.208 79.5556 110.134 80.7677Z"
+                  fill="#FFB546"
+                />
+              </svg>
+              <div>
+                <h1 class="absolute top-11 left-9 text-2xl font-extrabold">
+                  90%
+                </h1>
+              </div>
+            </div>
+            <div class="ml-2">
+              <h1 class="my-3 text-1xl font-semibold">Senior Player</h1>
+              <p class="text-base opacity-70">
+                Amet consectetur. Condimentum<br />dignissim adipiscing
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <div class="relative">
+              <svg
+                class="relative"
+                xmlns="http://www.w3.org/2000/svg"
+                width="120"
+                height="120"
+                viewBox="0 0 120 120"
+                fill="none"
+              >
+                <path
+                  d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                  fill="#E7E7E8"
+                />
+                <path
+                  d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                  fill="#4C8DF1"
+                />
+              </svg>
+              <div>
+                <h1 class="absolute top-11 left-9 text-2xl font-extrabold">
+                  80%
+                </h1>
+              </div>
+            </div>
+            <div class="ml-2">
+              <h1 class="my-3 text-1xl font-semibold">Training Ground</h1>
+              <p class="text-base opacity-70">
+                Amet consectetur. Condimentum<span class="block"
+                  >dignissim adipiscing</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Professional Hockey Club end -->
+      <!-- Program Section start -->
+      <section class="mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <h1 class="text-3xl font-semibold">Program Sections</h1>
+          <p class="mt-3 text-base opacity-70">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor.
+            <span class="block"> Purus urna in sit nullam proin.</span>
+          </p>
+        </div>
+        <div class="grid gap-32 my-10 lg:grid-cols-2 grid-cols-1 mx-auto">
+          <div
+            class="lg:max-w-xl h-80 bg-cover rounded-2xl"
+            style="background-image: url('../src/image/2.png')"
+          >
+            <div class="h-80 bg-black/50 rounded-2xl sm:pt-24 p-10">
+              <div class="text-white">
+                <h1 class="text-3xl font-semibold">Junior Program</h1>
+                <p class="text-base my-4">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna. Id et sed euismod natoque
+                  amet nunc morbi nulla. Tortor congue sed et in.
+                </p>
+                <button
+                  class="py-3 px-6 bg-red-500 text-1xl font-semibold rounded-lg hover:bg-red-600 duration-100 delay-200"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:max-w-xl h-80 bg-cover rounded-2xl"
+            style="background-image: url('../src/image/3.png')"
+          >
+            <div class="h-80 bg-black/50 rounded-2xl sm:pt-24 p-10">
+              <div class="text-white">
+                <h1 class="text-3xl font-semibold">Junior Program</h1>
+                <p class="text-base my-4">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna. Id et sed euismod natoque
+                  amet nunc morbi nulla. Tortor congue sed et in.
+                </p>
+                <button
+                  class="py-3 px-6 bg-red-500 text-1xl font-semibold rounded-lg hover:bg-red-600 duration-100 delay-200"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="w-full md:h-[500px] bg-cover rounded-2xl"
+            style="background-image: url('../src/image/4.png')"
+          >
+            <div class="md:h-[500px] bg-black/50 rounded-2xl p-10">
+              <div class="text-white md:mt-56 mt-5">
+                <h1 class="text-3xl font-semibold">Professional Program</h1>
+                <p class="text-base my-4">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  Elit<span class="sm:block">
+                    elit enim sagittis turpis in magna. Id et sed euismod
+                    natoque</span
+                  >
+                  amet nunc morbi nulla. Tortor congue sed et in.
+                </p>
+                <button
+                  class="py-3 px-8 bg-red-500 text-1xl font-semibold rounded-lg hover:bg-red-600 duration-100 delay-200"
+                >
+                  Register Now!
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Program Section end -->
+      <!-- product card section start -->
+      <section class="mt-20">
+        <div class="flex flex-col items-center text-center mb-10">
+          <h1 class="my-3 text-3xl font-semibold">Our new product</h1>
+          <p class="text-base opacity-70">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor.<span class="block">
+              Purus urna in sit nullam proin.</span
+            >
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 gap-5">
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm p-6 flex lg:flex-row flex-col gap-5"
+          >
+            <div>
+              <img class="h-full w-full" src="../src/image/5.png" alt="" />
+            </div>
+            <div>
+              <div class="my-3">
+                <div class="text-xl flex gap-3">
+                  <span
+                    ><i class="mr-2 text-yellow-500 fa-solid fa-star"></i
+                    >5.0</span
+                  >
+                  <span><i class="mr-2 fa-regular fa-eye"></i>20</span>
+                  <span><i class="mr-2 fa-regular fa-heart"></i>200</span>
+                </div>
+                <div class="my-3">
+                  <h1 class="text-2xl font-semibold">
+                    World Cup Flags Football
+                  </h1>
+                  <p class="mt-2 text-xl opacity-50 font-semibold">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  </p>
+                </div>
+                <div class="flex xl:items-center xl:flex-row flex-col gap-2">
+                  <h1 class="text-2xl text-red-500">Price - $22.00</h1>
+                  <div class="sm:mt-0 mt-5">
+                    <p class="text-xl opacity-50 font-semibold">
+                      <i class="mr-2 fa-solid fa-cart-shopping"></i>Delivery Fee
+                      : Free
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm p-6 flex lg:flex-row flex-col gap-5"
+          >
+            <div>
+              <img class="h-full w-full" src="../src/image/6.png" alt="" />
+            </div>
+            <div>
+              <div class="my-3">
+                <div class="text-xl flex gap-3">
+                  <span
+                    ><i class="mr-2 text-yellow-500 fa-solid fa-star"></i
+                    >5.0</span
+                  >
+                  <span><i class="mr-2 fa-regular fa-eye"></i>20</span>
+                  <span><i class="mr-2 fa-regular fa-heart"></i>200</span>
+                </div>
+                <div class="my-3">
+                  <h1 class="text-2xl font-semibold">
+                    World Cup Flags Football
+                  </h1>
+                  <p class="mt-2 text-xl opacity-50 font-semibold">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  </p>
+                </div>
+                <div class="flex xl:items-center xl:flex-row flex-col gap-2">
+                  <h1 class="text-2xl text-red-500">Price - $22.00</h1>
+                  <p class="text-xl opacity-50 font-semibold">
+                    <i class="mr-2 fa-solid fa-cart-shopping"></i>Delivery Fee :
+                    Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm p-6 flex lg:flex-row flex-col gap-5"
+          >
+            <div>
+              <img class="h-full w-full" src="../src/image/7.png" alt="" />
+            </div>
+            <div>
+              <div class="my-3">
+                <div class="text-xl flex gap-3">
+                  <span
+                    ><i class="mr-2 text-yellow-500 fa-solid fa-star"></i
+                    >5.0</span
+                  >
+                  <span><i class="mr-2 fa-regular fa-eye"></i>20</span>
+                  <span><i class="mr-2 fa-regular fa-heart"></i>200</span>
+                </div>
+                <div class="my-3">
+                  <h1 class="text-2xl font-semibold">
+                    World Cup Flags Football
+                  </h1>
+                  <p class="mt-2 text-xl opacity-50 font-semibold">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  </p>
+                </div>
+                <div class="flex xl:items-center xl:flex-row flex-col gap-2">
+                  <h1 class="text-2xl text-red-500">Price - $22.00</h1>
+                  <p class="text-xl opacity-50 font-semibold">
+                    <i class="mr-2 fa-solid fa-cart-shopping"></i>Delivery Fee :
+                    Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm p-6 flex lg:flex-row flex-col gap-5"
+          >
+            <div>
+              <img class="h-full w-full" src="../src/image/8.png" alt="" />
+            </div>
+            <div>
+              <div class="my-3">
+                <div class="text-xl flex gap-3">
+                  <span
+                    ><i class="mr-2 text-yellow-500 fa-solid fa-star"></i
+                    >5.0</span
+                  >
+                  <span><i class="mr-2 fa-regular fa-eye"></i>20</span>
+                  <span><i class="mr-2 fa-regular fa-heart"></i>200</span>
+                </div>
+                <div class="my-3">
+                  <h1 class="text-2xl font-semibold">
+                    World Cup Flags Football
+                  </h1>
+                  <p class="mt-2 text-xl opacity-50 font-semibold">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  </p>
+                </div>
+                <div class="flex xl:items-center xl:flex-row flex-col gap-2">
+                  <h1 class="text-2xl text-red-500">Price - $22.00</h1>
+                  <p class="text-xl opacity-50 font-semibold">
+                    <i class="mr-2 fa-solid fa-cart-shopping"></i>Delivery Fee :
+                    Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm p-6 flex lg:flex-row flex-col gap-5"
+          >
+            <div>
+              <img class="h-full w-full" src="../src/image/9.png" alt="" />
+            </div>
+            <div>
+              <div class="my-3">
+                <div class="text-xl flex gap-3">
+                  <span
+                    ><i class="mr-2 text-yellow-500 fa-solid fa-star"></i
+                    >5.0</span
+                  >
+                  <span><i class="mr-2 fa-regular fa-eye"></i>20</span>
+                  <span><i class="mr-2 fa-regular fa-heart"></i>200</span>
+                </div>
+                <div class="my-3">
+                  <h1 class="text-2xl font-semibold">
+                    World Cup Flags Football
+                  </h1>
+                  <p class="mt-2 text-xl opacity-50 font-semibold">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  </p>
+                </div>
+                <div class="flex xl:items-center xl:flex-row flex-col gap-2">
+                  <h1 class="text-2xl text-red-500">Price - $22.00</h1>
+                  <p class="text-xl opacity-50 font-semibold">
+                    <i class="mr-2 fa-solid fa-cart-shopping"></i>Delivery Fee :
+                    Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm p-6 flex lg:flex-row flex-col gap-5"
+          >
+            <div>
+              <img class="h-full w-full" src="../src/image/10.png" alt="" />
+            </div>
+            <div>
+              <div class="my-3">
+                <div class="text-xl flex gap-3">
+                  <span
+                    ><i class="mr-2 text-yellow-500 fa-solid fa-star"></i
+                    >5.0</span
+                  >
+                  <span><i class="mr-2 fa-regular fa-eye"></i>20</span>
+                  <span><i class="mr-2 fa-regular fa-heart"></i>200</span>
+                </div>
+                <div class="my-3">
+                  <h1 class="text-2xl font-semibold">
+                    World Cup Flags Football
+                  </h1>
+                  <p class="mt-2 text-xl opacity-50 font-semibold">
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis.
+                  </p>
+                </div>
+                <div class="flex xl:flex-row flex-col gap-2">
+                  <h1 class="text-2xl text-red-500">Price - $22.00</h1>
+                  <p class="text-xl opacity-50 font-semibold">
+                    <i class="mr-2 fa-solid fa-cart-shopping"></i>Delivery Fee :
+                    Free
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product cart section end -->
+      <!-- Clients Question section start -->
+      <section>
+        <div class="items-center text-center mt-20 mb-10">
+          <h1 class="text-3xl font-semibold">Clients Question</h1>
+          <p class="text-1xl opacity-70 mt-3">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor.<span class="sm:block">
+              Purus urna in sit nullam proin.</span
+            >
+          </p>
+        </div>
+        <div
+          class="border border-x-2 rounded-2xl drop-shadow-sm w-full p-6 flex lg:flex-row flex-col items-center gap-20 sm:gap-10"
+        >
+          <div class="lg:w-5/12 max-h-full">
+            <img src="../src/image/11.png" alt="" />
+          </div>
+          <div class="join join-vertical w-full lg:w-7/12 rounded-2xl">
+            <div
+              class="collapse collapse-plus join-item border border-base-300"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-base font-semibold text-[#131318]">
+                  Our Equipment
+                </h2>
+              </div>
+              <div class="collapse-content">
+                <p class="text-xs leading-5 -mt-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim
+                  <span class="sm:block">sagittis turpis in magna.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus join-item border border-base-300"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-base font-semibold text-[#131318]">
+                  Hockey Training
+                </h2>
+              </div>
+              <div class="collapse-content">
+                <p class="text-xs leading-5 -mt-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim
+                  <span class="sm:block">sagittis turpis in magna.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus join-item border border-base-300"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-base font-semibold text-[#131318]">
+                  Private Lessons
+                </h2>
+              </div>
+              <div class="collapse-content">
+                <p class="text-xs leading-5 -mt-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim
+                  <span class="sm:block">sagittis turpis in magna.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus join-item border border-base-300"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-base font-semibold text-[#131318]">
+                  Ski Touring
+                </h2>
+              </div>
+              <div class="collapse-content">
+                <p class="text-xs leading-5 -mt-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim
+                  <span class="sm:block">sagittis turpis in magna.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus join-item border border-base-300"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-base font-semibold text-[#131318]">Booking</h2>
+              </div>
+              <div class="collapse-content">
+                <p class="text-xs leading-5 -mt-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim
+                  <span class="sm:block">sagittis turpis in magna.</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus join-item border border-base-300"
+            >
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                <h2 class="text-base font-semibold text-[#131318]">Pricings</h2>
+              </div>
+              <div class="collapse-content">
+                <p class="text-xs leading-5 -mt-2">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim
+                  <span class="sm:block">sagittis turpis in magna.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Question section end -->
+      <!-- from section start -->
+      <section>
+        <div class="items-center text-center mt-20">
+          <h1 class="text-2xl font-semibold mb-3">Get In Touch</h1>
+          <p class="text-xl opacity-70 mb-10">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor.<span class="sm:block">
+              Purus urna in sit nullam proin.</span
+            >
+          </p>
+        </div>
+        <div class="flex flex-col gap-20">
+          <div
+            class="border border-x-2 rounded-2xl drop-shadow-sm py-10 max-w-full"
+          >
+            <div
+              class="grid xl:grid-cols-3 lg:grid-cols-2 justify-center gap-5 px-3"
+            >
+              <div class="flex items-center gap-5">
+                <img src="../src/image/Group 1171275317.png" alt="" />
+                <p class="text-2xl">Phone Number:</p>
+                <h1>(+62) 123-321-543</h1>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="../src/image/Group 1171275318.png" alt="" />
+                <p class="text-2xl">Email:</p>
+                <h1>hockeys@support.com</h1>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="../src/image/Group 1171275321.png" alt="" />
+                <p class="text-2xl">Location:</p>
+                <h1>152/1 Mohakhali Wireless Gate</h1>
+              </div>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-10">
+            <div class="flex flex-col gap-3">
+              <label class="text-xl" for="Your Name">Your Name</label>
+              <input
+                class="p-3 rounded-md outline-none border"
+                type="Name"
+                id="Your Name"
+                placeholder="Enter Your Full Name"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <label class="text-xl" for="Email">Your Email</label>
+              <input
+                class="p-3 rounded-md outline-none border"
+                type="Email"
+                id="Email"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <label class="text-xl" for="subject">Subject</label>
+              <input
+                class="p-3 rounded-md outline-none border"
+                type="subject"
+                id="subject"
+                placeholder="Enter Your Subject"
+              />
+            </div>
+            <div class="flex flex-col gap-3">
+              <label class="text-xl" for="Number">Phone Number</label>
+              <input
+                class="p-3 rounded-md outline-none border"
+                type="Number"
+                id="Number"
+                placeholder="Enter Your Phone Number"
+              />
+            </div>
+            <div class="flex flex-col h-56 md:col-span-1 sm:col-span-2">
+              <label class="mb-4 text-xl" for="Message">Message</label>
+              <textarea
+                class="pt-3 pl-4 outline-none border"
+                id="Message"
+                cols="30"
+                rows="10"
+              >
+Write Your Message</textarea
+              >
+              <div
+                class="text-white text-xl font-semibold rounded-lg items-center text-center bg-red-500 py-3 mt-5"
+              >
+                <button>Send Message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items-center text-center my-20 flex flex-col">
+          <h1 class="text-2xl font-semibold">Social Media</h1>
+          <div class="text-xl flex gap-5 mt-3">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </section>
+      <!-- form section end -->
+    </div>
+    <section class="bg-black xl:h-96 h-auto xl:px-0 px-5">
+      <footer
+        class="sm:max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5  justify-items-center py-14 text-white"
+      >
+        <div class="leading-10">
+          <h1 class="text-2xl font-bold mb-5">Get In Touch</h1>
+          <p class="opacity-60 text-1xl">
+            Dit amet consectetur. Condimentum<span class="block"
+              >aliquam turpis placerat dolor.</span
+            >
+            Purus urna in sit nullam proin.
+          </p>
+          <div class="flex flex-col">
+            <h2 class="opacity-60 text-1xl">
+              <i class="mr-2 text-red-500 fa-regular fa-envelope"></i
+              >hockeys@support.com
+            </h2>
+            <span class="opacity-60 text-1xl"
+              ><i class="mr-2 text-red-500 fa-solid fa-phone"></i>(+62)
+              123-321-543</span
+            >
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1 class="text-2xl font-bold mb-5">Company</h1>
+            <div class="flex flex-col leading-10 opacity-60 text-1xl">
+              <a href="#">About Us</a>
+              <a href="#">Leadership</a>
+              <a href="#">Careers</a>
+              <a href="#">News & Article</a>
+              <a href="#">Legal Notice</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1 class="text-2xl font-bold mb-5">Support</h1>
+            <div class="flex flex-col leading-10 opacity-60 text-1xl">
+              <a href="http://">Help Center</a>
+              <a href="http://">FAQ</a>
+              <a href="http://">Ticket Support</a>
+              <a href="http://">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1 class="text-2xl font-bold mb-5">Services</h1>
+            <div class="flex flex-col leading-10 opacity-60 text-1xl">
+              <a href="http://">Academy</a>
+              <a href="http://">Group Lesson</a>
+              <a href="http://">Private Lesson</a>
+              <a href="http://">Hockeys for kids</a>
+              <a href="http://">Hockeys for Adult</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
